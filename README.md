@@ -9,12 +9,34 @@ This project is focused on detecting **car damage types** from images using deep
 - **Rear Crushed**
 - **Rear Breakage**
 
+---
+
+## 🌐 Live Demo
+
+[![Streamlit App](https://img.shields.io/badge/Live_App-Streamlit-brightgreen?logo=streamlit)](https://rohesen-car-damage-detector.streamlit.app/)
+
+> 🚀 Click the badge above to try the app live!
+
+---
+
+## 📷 Screenshots
+
+| Upload Page | Prediction Result |
+|-------------|-------------------|
+| ![Upload Screenshot](https://github.com/Rohesen/car-damage-detection-app/blob/main/screenshots/upload_page.png) | ![Result Screenshot](https://github.com/Rohesen/car-damage-detection-app/blob/main/screenshots/result_page.png) |
+
+*(Place these screenshots inside a `screenshots/` folder in your GitHub repo.)*
+
+---
+
 ## 📁 Dataset
 
 - Total Images: ~1700
 - Classes: 6 (as mentioned above)
 - Input: Car images
 - Preprocessing: Data augmentation techniques (rotation, zoom, flip, etc.) to enhance model generalization.
+
+---
 
 ## 🧠 Approach
 
@@ -48,6 +70,8 @@ This project is focused on detecting **car damage types** from images using deep
 - **Accuracy**: 83%
 - **Observation**: Despite optimized parameters, performance slightly dropped. Reverted to Dropout = 0.5.
 
+---
+
 ## 🧪 Final Model
 
 | Model     | Accuracy |
@@ -58,6 +82,8 @@ This project is focused on detecting **car damage types** from images using deep
 | ResNet (LR=0.001, Dropout=0.5) | **84%** |
 | Optuna Tuned | 83%   |
 
+---
+
 ## 🛠️ Tools & Libraries Used
 
 - Python
@@ -66,7 +92,9 @@ This project is focused on detecting **car damage types** from images using deep
 - Matplotlib
 - Optuna for hyperparameter tuning
 - Jupyter Notebook
-- streamlit
+- Streamlit
+
+---
 
 ## 📌 Future Improvements
 
@@ -75,9 +103,8 @@ This project is focused on detecting **car damage types** from images using deep
 - Deploy the model using Flask or Streamlit
 - Implement Grad-CAM for damage localization
 
+---
+
 ## 📷 Sample Predictions
 
 ![Car Damage Detection GIF](https://github.com/Rohesen/car-damage-detection-app/blob/main/project_video.gif)
-
-
-
