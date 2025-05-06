@@ -9,7 +9,7 @@ This project is focused on detecting **car damage types** from images using deep
 - **Rear Crushed**
 - **Rear Breakage**
 
----
+
 
 ## 🌐 Live Demo
 
@@ -17,14 +17,8 @@ This project is focused on detecting **car damage types** from images using deep
 
 > 🚀 Click the badge above to try the app live!
 
----
-
-## 📷 Screenshots
-
-![Car Damage Detection GIF](https://github.com/Rohesen/car-damage-detection-app-using-DL/blob/main/rear_breakage.png)
 
 
----
 
 ## 📁 Dataset
 
@@ -33,7 +27,7 @@ This project is focused on detecting **car damage types** from images using deep
 - Input: Car images
 - Preprocessing: Data augmentation techniques (rotation, zoom, flip, etc.) to enhance model generalization.
 
----
+
 
 ## 🧠 Approach
 
@@ -67,7 +61,7 @@ This project is focused on detecting **car damage types** from images using deep
 - **Accuracy**: 83%
 - **Observation**: Despite optimized parameters, performance slightly dropped. Reverted to Dropout = 0.5.
 
----
+
 
 ## 🧪 Final Model
 
@@ -91,7 +85,7 @@ This project is focused on detecting **car damage types** from images using deep
 - Jupyter Notebook
 - Streamlit
 
----
+
 
 ## 📌 Future Improvements
 
@@ -100,7 +94,7 @@ This project is focused on detecting **car damage types** from images using deep
 - Deploy the model using Flask or Streamlit
 - Implement Grad-CAM for damage localization
 
----
+
 
 ## 📷 Sample Predictions
 
