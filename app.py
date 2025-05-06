@@ -15,6 +15,6 @@ if uploaded_file:
 
 
 st.markdown(
-    "<p style='font-size: 15px; text-align: center;'>Created by 🔥Rohesen</p>",
+    "<p style='font-size: 15px; text-align: center;'>Created by Rohesen</p>",
     unsafe_allow_html=True
 )
