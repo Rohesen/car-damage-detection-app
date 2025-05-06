@@ -1,28 +1,81 @@
-# Vehicle Damange Detection App
+# 🚗 Car Damage Detection using Deep Learning
 
-This app let's you drag and drop an image of a car and it will tell you what kind of damage it has.
-The model is trained on third quarter front and rare view hence the picture should capture the third quarter front or rare view of a car. 
+This project is focused on detecting **car damage types** from images using deep learning. The model classifies a car image into one of the following **6 categories**:
 
-![app](app_screenshot.jpg)
+- **Front Normal**
+- **Front Crushed**
+- **Front Breakage**
+- **Rear Normal**
+- **Rear Crushed**
+- **Rear Breakage**
 
-### Model Details
-1. Used ResNet50 for transfer learning
-2. Model was trained on around 1700 images with 6 target classes
-   1. Front Normal
-   2. Front Crushed
-   3. Front Breakage
-   4. Rear Normal
-   5. Rear Crushed
-   6. Rear Breakage
-9. The accuracy on the validation set was around 84%
+## 📁 Dataset
 
-### Set Up
+- Total Images: ~1700
+- Classes: 6 (as mentioned above)
+- Input: Car images
+- Preprocessing: Data augmentation techniques (rotation, zoom, flip, etc.) to enhance model generalization.
 
-1. To get started, first install the dependencies using:
-    ```commandline
-     pip install -r requirements.txt
-    ```
-   
-2. Run the streamlit app:
-   ```commandline
-   streamlit run app.py
+## 🧠 Approach
+
+### 1. 📊 Baseline Model (CNN)
+- **Technique**: Custom CNN
+- **Accuracy**: 57%
+- **Observation**: Underfitting, struggled to generalize.
+
+### 2. 🔒 CNN with Regularization
+- **Techniques**: Added Dropout & L2 Regularization
+- **Accuracy**: 55%
+- **Observation**: Regularization didn’t help, accuracy dropped.
+
+### 3. 🔁 Transfer Learning - EfficientNet
+- **Model**: EfficientNet
+- **Accuracy**: 69%
+- **Observation**: Performance improved significantly with pre-trained weights.
+
+### 4. 🌀 ResNet with Dropout
+- **Model**: ResNet (with Dropout = 0.5, Learning Rate = 0.001)
+- **Accuracy**: 84%
+- **Observation**: Best result so far, good balance between bias and variance.
+
+### 5. 🔍 Hyperparameter Tuning with Optuna
+- **Search Space**:
+  - Learning Rate: `[1e-5, 1e-2]`
+  - Dropout: `[0.2, 0.7]`
+- **Best Found**: 
+  - Learning Rate: `0.001`
+  - Dropout: `0.28`
+- **Accuracy**: 83%
+- **Observation**: Despite optimized parameters, performance slightly dropped. Reverted to Dropout = 0.5.
+
+## 🧪 Final Model
+
+| Model     | Accuracy |
+|-----------|----------|
+| CNN       | 57%      |
+| CNN + Reg | 55%      |
+| EfficientNet | 69%   |
+| ResNet (LR=0.001, Dropout=0.5) | **84%** |
+| Optuna Tuned | 83%   |
+
+## 🛠️ Tools & Libraries Used
+
+- Python
+- TensorFlow / Keras
+- OpenCV / PIL
+- Matplotlib / Seaborn
+- Optuna for hyperparameter tuning
+- Google Colab / Jupyter Notebook
+
+## 📌 Future Improvements
+
+- Train on larger and more diverse dataset
+- Test with real-world car images
+- Deploy the model using Flask or Streamlit
+- Implement Grad-CAM for damage localization
+
+## 📷 Sample Predictions
+
+_(Include sample image predictions if available)_
+
+
