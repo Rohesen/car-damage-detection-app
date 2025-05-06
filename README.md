@@ -91,7 +91,6 @@ This project is focused on detecting **car damage types** from images using deep
 
 - Train on larger and more diverse dataset
 - Test with real-world car images
-- Deploy the model using Flask or Streamlit
 - Implement Grad-CAM for damage localization
 
 
