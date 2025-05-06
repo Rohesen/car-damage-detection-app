@@ -23,9 +23,6 @@ This project is focused on detecting **car damage types** from images using deep
 
 ![Car Damage Detection GIF](https://github.com/Rohesen/car-damage-detection-app-using-DL/blob/main/rear_breakage.png)
 
-![Car Damage Detection GIF](https://github.com/Rohesen/car-damage-detection-app-using-DL/blob/main/front_crushed.png)
-
-![Car Damage Detection GIF](https://github.com/Rohesen/car-damage-detection-app-using-DL/blob/main/rn.png)
 
 ---
 
