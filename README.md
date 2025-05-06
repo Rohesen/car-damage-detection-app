@@ -66,6 +66,7 @@ This project is focused on detecting **car damage types** from images using deep
 - Matplotlib
 - Optuna for hyperparameter tuning
 - Jupyter Notebook
+- streamlit
 
 ## 📌 Future Improvements
 
