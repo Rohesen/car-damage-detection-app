@@ -73,7 +73,7 @@ This project is focused on detecting **car damage types** from images using deep
 | ResNet (LR=0.001, Dropout=0.5) | **84%** |
 | Optuna Tuned | 83%   |
 
----
+
 
 ## 🛠️ Tools & Libraries Used
 
