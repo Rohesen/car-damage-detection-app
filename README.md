@@ -61,11 +61,11 @@ This project is focused on detecting **car damage types** from images using deep
 ## 🛠️ Tools & Libraries Used
 
 - Python
-- TensorFlow / Keras
-- OpenCV / PIL
-- Matplotlib / Seaborn
+- TensorFlow
+- PIL
+- Matplotlib
 - Optuna for hyperparameter tuning
-- Google Colab / Jupyter Notebook
+- Jupyter Notebook
 
 ## 📌 Future Improvements
 
