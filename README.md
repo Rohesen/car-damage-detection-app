@@ -76,6 +76,9 @@ This project is focused on detecting **car damage types** from images using deep
 
 ## 📷 Sample Predictions
 
-_(Include sample image predictions if available)_
+## 📷 Sample Predictions
+
+![Car Damage Detection GIF](https://github.com/Rohesen/car-damage-detection-app/blob/main/project_video.gif)
+
 
 
