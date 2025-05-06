@@ -1,11 +1,6 @@
 import streamlit as st
 from model_helper import predict
 
-
-st.markdown(
-    "<p style='font-size: 15px; text-align: center;'>Created by 🔥Rohesen</p>",
-    unsafe_allow_html=True
-)
 st.title("Car Damage Detection")
 
 uploaded_file = st.file_uploader("Upload the file", type = ["jpg","png"])
