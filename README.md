@@ -61,7 +61,7 @@ This project is focused on detecting **car damage types** from images using deep
 ## 🛠️ Tools & Libraries Used
 
 - Python
-- TensorFlow
+- PyTorch
 - PIL
 - Matplotlib
 - Optuna for hyperparameter tuning
