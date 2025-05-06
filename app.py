@@ -12,3 +12,9 @@ if uploaded_file:
         st.image(uploaded_file, caption = "Uploaded File", use_container_width = True)
         prediction = predict(image_path)
         st.info(f"Predicted Class: {prediction}")
+
+
+st.markdown(
+    "<p style='font-size: 15px; text-align: center;'>Created by 🔥Rohesen</p>",
+    unsafe_allow_html=True
+)
